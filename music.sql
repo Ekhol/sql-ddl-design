@@ -1,6 +1,10 @@
 -- from the terminal run:
 -- psql < music.sql
 
+-- Schema Changes: I would refactor most of this into a table for album that sources artist information, song information,
+-- and producer information from other tables. The songs table can be populated from information from the album table and get
+-- further information from more specific tables about the artists/producers/etc.
+
 DROP DATABASE IF EXISTS music;
 
 CREATE DATABASE music;

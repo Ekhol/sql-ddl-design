@@ -1,6 +1,9 @@
 -- from the terminal run:
 -- psql < air_traffic.sql
 
+--Schema changes: Divide tickets table into a passenger table, flight info table, and locations table. Import info
+--from the new tables into the tickets table instead of writing everything directly into the tickets.
+
 DROP DATABASE IF EXISTS air_traffic;
 
 CREATE DATABASE air_traffic;
